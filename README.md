@@ -48,5 +48,15 @@ The residence type does not have any impact on the stroke. Urban, and rural area
  
  For smoking status, smokers and former smokers have the similar tendency of stroke. The current smoker’s exposure higher risk of stroke, especially they faced stroke younger than non-smokers, but they have less stroke history than older than 80 years old. 
 
+Therefore, every attributes impact on the stroke history, but the strongest reason is age, bmi, average of glucose level, and smoking status. 
 
-Therefore, every attributes impact on the stroke history, but the strongest reason is age, bmi, and smoking status. 
+Using Random Forest to predict stroke patient
+For training set, to address data imbalance, the training set was balanced with a 1:1 ratio between stroke and non-stroke cases, allowing the Random Forest model to learn stroke patterns effectively.
+The model was evaluated on an unseen test set with a 1:2 ratio, simulating a more realistic environment where non-stroke cases are more frequent.
+
+<img width="488" height="661" alt="image" src="https://github.com/user-attachments/assets/cc6043e7-63c4-4222-94c3-174a057d0ba6" />
+
+This is the result of the ML model.
+While maintaining an overall accuracy of 70%, the model achieved a high Recall of 82%. This prioritizes minimizing "False Negatives," ensuring that potential stroke patients are not overlooked.
+
+
